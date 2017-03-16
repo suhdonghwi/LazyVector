@@ -53,7 +53,7 @@ int main()
         else return std::optional<uint64_t>();
     });
  
-    for (int i = 0; i <= 100; i++)
+    for (std::size_t i = 0; i < 100; i++)
     {
         if(primes_lv[i])
             std::cout << primes_lv[i].value() << std::endl;
